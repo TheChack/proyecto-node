@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
     <title>Contactanos!</title>
 </head>
 <body>
-    
+    <!--nav>Completar con lo de los otros compañeros</nav-->
+    <h3>Cualquier consulta podés contactarnos en nuestras redes.<br>
+        ¡También podés dejarnos un mensaje abajo!
+    </h3>
+    <form class="contacto-form" action="" method="POST">
+        <label for="nombre">Nombre<input type="text"></input> </label>
+        <label for="correo">Correo Electrónico<input type="text"></input> </label>
+        <select name="tema">
+            <option value="0">¿Para qué desea contactarnos?</option>
+            <option value="1">1 - Queja o Reembolso</option>
+            <option value="2">2 - Problema técnico</option>
+            <option value="3">3 - Recursos Humanos</option>
+            <option value="4">4 - Otra razón</option>
+        </select>
+        <textarea placeholder="Escribí tu mensaje."></textarea>
+        <input id="enviar" type="button" value="Enviar">
+    </form>
 </body>
 </html>
