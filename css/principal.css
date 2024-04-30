@@ -7,30 +7,49 @@
     width: 100%; 
     height: fit-content;
 }
-/*La parte del formulario*/
+/*Para Contacto*/
 .contacto-form {
     display: flex;
     flex-direction: column;
     width: 50%;
+    max-width: 700px;
     margin: auto;
     padding: 10px;
-    gap: 30px;
+    gap: 24px;
 }
 .contacto-form label {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.contacto-form input, .contacto-form select {
-    height: 20px;
+.contacto-form input, 
+.contacto-form select {
+    height: 32px;
+    padding: 6px;
+    font-size: 14px;
 }
 .contacto-form textarea {
     height: 100px;
+    padding: 6px 8px;
+    font-size: 16px;
+}
+.checkbox-texto {
+    padding: 0 10px;
+    font-size: 14px;
+}
+.checkbox-label {
+    place-items: center;
+    margin: auto;
 }
 #enviar {
-    display: inline-block;
     margin: auto;
-    padding: 20px;
+    height: fit-content;
+    padding: 10px 20px;
     border: none;
+    border-radius: 4px;
+    background: #2bf52b;
 }
-/*Termina la parte de formulario*/
+
+@media screen and (max-width: 990px) {
+    
+}
