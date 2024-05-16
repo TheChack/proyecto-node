@@ -31,10 +31,10 @@ a {
     flex-direction: column;
 }
 .producto-main {
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
     margin: 25px auto;
     padding: 10px;
-    background-color: pink;
 }
 .producto-img-main {
     height: 400px;
@@ -47,6 +47,21 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.producto-img-side {
+    justify-content: space-evenly;
+}
+.producto-img-side img {
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+    background-color: white;
+    opacity: 0.5;
+    border: 1px solid var(--fondo3);
+    border-radius: 4px;
+}
+.producto-img-side img:hover {
+    opacity: 1;
 }
 .producto-nav {
     width: 100%;
