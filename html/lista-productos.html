@@ -21,13 +21,18 @@
           justify-content: space-between;
           align-items: center;
           height: 100px;
-          width: 100%;
           padding: 30px;
         "
       >
-        <div style="display: flex; height: 30px; gap: 20px">
-          <img src="../assets/icons-nav/menu-svgrepo-com.svg" />
-          <img src="../assets/icons-nav/search-svgrepo-com.svg" />
+        <div style="display: flex; gap: 20px">
+          <img
+            style="height: 30px; width: 30px"
+            src="../assets/icons-nav/menu-svgrepo-com.svg"
+          />
+          <img
+            style="height: 30px; width: 30px"
+            src="../assets/icons-nav/search-svgrepo-com.svg"
+          />
         </div>
         <div
           style="display: flex; justify-content: center; align-items: center"
@@ -38,9 +43,15 @@
           />
           <span style="font-size: 1.5rem">Termitos</span>
         </div>
-        <div style="display: flex; height: 30px; gap: 20px">
-          <img src="../assets/icons-nav/profile-round-1346-svgrepo-com.svg" />
-          <img src="../assets/icons-nav/cart-shopping-svgrepo-com.svg" />
+        <div style="display: flex; gap: 20px">
+          <img
+            style="height: 30px; width: 30px"
+            src="../assets/icons-nav/profile-round-1346-svgrepo-com.svg"
+          />
+          <img
+            style="height: 30px; width: 30px"
+            src="../assets/icons-nav/cart-shopping-svgrepo-com.svg"
+          />
         </div>
       </div>
     </nav>
@@ -78,8 +89,24 @@
             <input placeholder="Máximo" />
           </div>
         </div>
-        <div></div>
+        <div>
+          <ul id="lista"></ul>
+        </div>
       </div>
+      <script type="module">
+        import productos from "../assets/json-products/products.json";
+
+        const lista = document.getElementById("lista");
+        const items = productos.map((item) => {
+          const li = document.createElement("li");
+          li.textContent = nombre;
+          return li;
+        });
+
+        items.forEach((item) => {
+          lista.appendChild(item);
+        });
+      </script>
     </main>
   </body>
 </html>
