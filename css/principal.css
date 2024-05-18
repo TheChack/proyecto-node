@@ -17,7 +17,7 @@
     font-weight: 300;
     color: var(--negro);
 }
-a {
+a { 
     color: inherit;
 }
 .boton-main {
