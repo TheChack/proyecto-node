@@ -1,0 +1,20 @@
+.button-size {
+  height: 40px;
+  width: 70px;
+}
+
+.button-color {
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+input {
+  width: 70px;
+}
+
+.filter-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #1e1e1e33;
+}
