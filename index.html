@@ -10,18 +10,20 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/principal.css" />
+    <link rel="stylesheet" href="./css/principal.css" />
+    <link rel="stylesheet" href="./css/index.css"/>
     <link
       rel="shortcut icon"
       href="/assets/favicon/favicon.ico"
       type="image/x-icon"
     />
+    <script src="https://kit.fontawesome.com/0f9bde7951.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../views/index.html"
+        <a class="navbar-brand" href="./index.html"
           ><img
             src="/assets/termo.png"
             alt="Logo"
@@ -43,29 +45,26 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="navbar-brand" href="../views/index.html">Inicio</a>
+              <a class="navbar-brand" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Explorar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../html/sobre-nosotros.html">Sobre Nosotros</a>
+              <a class="nav-link" href="./html/sobre-nosotros.html">Sobre Nosotros</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- CABECERA -->
-    <header class=" py-5">
-      <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-black">
-          <h1 class="display-4 fw-bolder">Lumilagro</h1>
-          <p class="lead fw-normal text-black-50 mb-0">Termos de calidad</p>
-        </div>
+    <header class="header-main">
+      <div class="header-texto">
+        <h1 class="header-titulo">Termitos</h1>
+        <p class="header-subtitulo">Termos de calidad</p>
       </div>
-    </header>
-    <!-- CARRUSEL DE TERMOS -->
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- CARRUSEL DE TERMOS -->
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
       <!-- <div class="carousel-indicators">
         <button
           type="button"
@@ -91,26 +90,28 @@
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="4000">
           <img
-            src="../assets/termos1.PNG"
+            src="./assets/termos1.PNG"
             alt="..."
           />
         </div>
         <div class="carousel-item" data-bs-interval="4000">
           <img
-            src="../assets/termos2.png"
+            src="./assets/termos2.png"
             class="d-block w-100"
             alt="..."
           />
         </div>
         <div class="carousel-item" data-bs-interval="4000">
           <img
-            src="../assets/termos3.PNG"
+            src="./assets/termos3.PNG"
             class="d-block w-100"
             alt="..."
           />
         </div>
       </div>
-    </div>
+      </div>
+    </header>
+
     <!-- Section-->
     <section class="py-5">
       <div class="container px-4 px-lg-5 mt-5">

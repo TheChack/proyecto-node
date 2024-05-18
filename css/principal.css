@@ -1,14 +1,21 @@
+/*font-family: Kanit*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --fondo1: #f5f5f4;
     --fondo2: #ececeb;
     --fondo3: #a6a7a1;
-    --tarjeta: #cbccc3;;
-    --boton1: #f7a842;
+    --tarjeta: #cbccc3;
+    --boton1: #f5a031;
     --boton2: #f8d3a2;
+    --negro: #1d1b1a;
 }
 * {
     margin: 0;
     text-decoration: none;
+    font-family: Kanit;
+    font-weight: 300;
+    color: var(--negro);
 }
 a {
     color: inherit;
@@ -20,8 +27,21 @@ a {
     border-radius: 4px;
     background: var(--boton1);
 }
+.boton-main:hover {
+    background: var(--boton2) ;
+}
 .boton-sub {
-
+    height: fit-content;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: var(--fondo1);
+    border: 2px solid var(--boton1);
+    color: var(--boton1);
+    font-weight: 400;
+}
+.boton-sub:hover {
+    background: var(--fondo2);
 }
 .navbar-nav {
     justify-items: center;
@@ -33,14 +53,6 @@ a {
 .nav-link {
     margin: 0;
     padding: 8px;
-}
-#carousel {
-    max-height: 430px; 
-    overflow:hidden;
-}
-.carousel-item img {
-    width: 100%; 
-    height: fit-content;
 }
 .flex-row {
     display: flex;
@@ -89,8 +101,16 @@ a {
 .producto-side {
     margin: auto;
 }
-.producto-titulo, .producto-precio {
+.producto-titulo {
     margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+.producto-precio {
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 1.6rem;
 }
 .producto-opciones {
     margin: 10px 0;
@@ -126,18 +146,20 @@ a {
     gap: 10px;
 }
 .agregar-carro {
-    font-weight: 500;
+    font-weight: 400;
 }
 .agregar-favorito {
     height: fit-content;
     width: fit-content;
     border: none;
     border-radius: 100px;
-    color: var(--boton2);
     background:none;
     font-size: 24px;
 }
-.agregar-favorito:hover {
+.agregar-favorito i {
+    color: var(--boton2);
+}
+.agregar-favorito i:hover {
     color: var(--boton1);
 }
 .producto-nav {
@@ -172,10 +194,65 @@ a {
     border-bottom: 1px solid var(--fondo2);
 }
 .producto-descripcion {
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 .producto-caract-lista {
     margin: 0;
+}
+.producto-resenas {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.producto-resenas-resumen {
+    gap: 10px;
+}
+.producto-resenas-puntaje-estrella {
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.producto-resenas-estrella {
+    height: 25px;
+}
+.producto-resenas-puntaje {
+    font-size: 2rem;
+}
+.producto-resenas-descripcion {
+    font-style: italic;
+    text-align: center;
+}
+.producto-resenas-barra-estrella {
+    height: 15px;
+}
+.producto-resenas-5, .producto-resenas-4, .producto-resenas-3,
+.producto-resenas-2, .producto-resenas-1 {
+    align-items: center;
+    gap: 10px;
+}
+.producto-resenas-5-linea1, .producto-resenas-4-linea1,
+.producto-resenas-3-linea1, .producto-resenas-2-linea1,
+.producto-resenas-1-linea1 {
+    height: 10px;
+    background-color: var(--boton1);
+}
+.producto-resenas-5-linea1 {width: 75px;}
+.producto-resenas-4-linea1 {width: 225px;}
+.producto-resenas-3-linea1 {width: 125px;}
+.producto-resenas-2-linea1 {width: 100px;}
+.producto-resenas-1-linea1 {width: 50px;}
+
+.producto-resenas-5-linea0 {width: 225px;}
+.producto-resenas-4-linea0 {width: 75px;}
+.producto-resenas-3-linea0 {width: 175px;}
+.producto-resenas-2-linea0 {width: 200px;}
+.producto-resenas-1-linea0 {width: 250px;}
+
+.producto-resenas-5-linea0, .producto-resenas-4-linea0,
+.producto-resenas-3-linea0, .producto-resenas-2-linea0,
+.producto-resenas-1-linea0 {
+    height: 10px;
+    background-color: var(--boton2);
 }
 /*Página Sobre Nosotros*/
 .contacto {
@@ -199,6 +276,8 @@ a {
     padding: 25px 50px;
 }
 .texto-descripcion {
+    font-weight: 300;
+    font-size: 1.5rem;
     width: 800px;
     padding: 50px 0;
     margin: auto;
