@@ -1,3 +1,6 @@
+/*font-family: Kanit*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --fondo1: #f5f5f4;
     --fondo2: #ececeb;
@@ -9,6 +12,8 @@
 * {
     margin: 0;
     text-decoration: none;
+    font-family: Kanit;
+    font-weight: 300;
 }
 a {
     color: inherit;
@@ -30,14 +35,6 @@ a {
 .nav-link {
     margin: 0;
     padding: 8px;
-}
-#carousel {
-    max-height: 430px; 
-    overflow:hidden;
-}
-.carousel-item img {
-    width: 100%; 
-    height: fit-content;
 }
 .flex-row {
     display: flex;
@@ -86,8 +83,16 @@ a {
 .producto-side {
     margin: auto;
 }
-.producto-titulo, .producto-precio {
+.producto-titulo {
     margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+.producto-precio {
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 1.6rem;
 }
 .producto-opciones {
     margin: 10px 0;
@@ -123,7 +128,7 @@ a {
     gap: 10px;
 }
 .agregar-carro {
-    font-weight: 500;
+    font-weight: 400;
 }
 .agregar-favorito {
     height: fit-content;
@@ -196,6 +201,8 @@ a {
     padding: 25px 50px;
 }
 .texto-descripcion {
+    font-weight: 300;
+    font-size: 1.5rem;
     width: 800px;
     padding: 50px 0;
     margin: auto;
