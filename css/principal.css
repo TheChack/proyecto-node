@@ -190,6 +190,73 @@ a {
     align-items: center;
     text-transform: uppercase;
 }
+.textarea{
+    min-height: 50px;
+    max-height: 100px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+}
+.social{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+    align-items: center;
+
+}
+.textarea2{
+    min-height: 50px;
+    max-height: 100px;
+    font-size: medium;
+    width: 400px;
+    display: flex;
+    place-items: left;
+    justify-content: left;
+    padding: 50px;
+    padding-left: 20px;
+    margin: 0px;
+    margin-left: 100px;
+    align-items: center;
+    text-align: center;
+}
+.img-redess{
+    height: 40px;
+
+}
+.img-about{
+    height: 40px;
+}
+ul.about {
+    min-height: 50px;
+    max-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    place-items: center;
+    bottom: unset;
+    justify-content: center;
+    padding: 30px;
+    margin: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    list-style-type: none;
+    gap: 50px;
+    background-color: #b3b3b3;
+
+}
+    
+
 .contacto-content {
     display: flex;
     flex-direction: row;
