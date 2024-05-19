@@ -277,6 +277,9 @@ a {
     align-items: center;
     text-transform: uppercase;
 }
+.header-pagina h1 {
+    font-size: 64px;
+}
 .textarea{
     min-height: 50px;
     max-height: 100px;
@@ -339,8 +342,7 @@ ul.about {
     margin-right: 0px;
     list-style-type: none;
     gap: 50px;
-    background-color: #b3b3b3;
-
+    background-color: var(--fondo2);
 }
     
 

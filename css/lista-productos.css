@@ -10,6 +10,15 @@
     --boton2: #f8d3a2;
     --negro: #1d1b1a;
 }
+main .header-pagina {
+  height: 200px;
+}
+.header-img1, .header-img2 {
+  position: absolute;
+  height: 200px;
+}
+.header-img1 {left: 0;}
+.header-img2 {right: 0;}
 
 .button-size {
   height: 40px;
