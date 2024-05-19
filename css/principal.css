@@ -20,6 +20,13 @@
 a { 
     color: inherit;
 }
+.logo {
+    text-decoration: none;
+}
+  .logo span {
+    font-family: Kanit;
+    font-weight: 500;
+}
 .boton-main {
     height: fit-content;
     padding: 10px 20px;

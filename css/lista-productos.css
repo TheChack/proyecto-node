@@ -10,11 +10,6 @@
     --boton2: #f8d3a2;
 }
 
-.logo {
-  font-family: Kanit;
-  font-weight: 500;
-  text-decoration: none;
-}
 .button-size {
   height: 40px;
   width: 70px;
