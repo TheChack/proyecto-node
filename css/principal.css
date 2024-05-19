@@ -9,6 +9,9 @@
     --boton1: #f5a031;
     --boton2: #f8d3a2;
     --negro: #1d1b1a;
+    --sombra: #1d1b1a49;
+    --rojo: #ff391f;
+    --verde: #349c1f;
 }
 * {
     margin: 0;
@@ -23,9 +26,9 @@ a {
 .logo {
     text-decoration: none;
 }
-  .logo span {
-    font-family: Kanit;
-    font-weight: 500;
+.logo span {
+    font-weight: 400;
+    text-transform: uppercase;
 }
 .boton-main {
     height: fit-content;
@@ -295,9 +298,15 @@ a {
 .gmaps-img {
     height: 300px;
     border: 2px solid white;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0 4px var(--sombra);
     border-radius: 4px;
     margin-bottom: 25px;
+    transition: 0.2s ease-in-out;
+}
+.gmaps-img:hover {
+    box-shadow: 0 0 8px var(--sombra);
+    border: 3px solid white;
+    transform: scale(1.25);
 }
 .contacto-form {
     display: flex;
@@ -308,6 +317,7 @@ a {
     padding: 16px;
     gap: 12px;
     background: var(--tarjeta);
+    box-shadow: 0 0 4px var(--sombra);
     border-radius: 8px;
 }
 .contacto-form label {
@@ -347,6 +357,17 @@ a {
     border: none;
     border-radius: 4px;
     background: var(--boton1);
+}
+#mensaje-error, #mensaje-confirmacion {
+    display: none;
+    text-align: center;
+    font-weight: 400;
+}
+#mensaje-error {
+    color: var(--rojo);
+}
+#mensaje-confirmacion {
+    color: var(--verde);
 }
 .redes-contacto {
     display: flex;

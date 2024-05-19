@@ -74,8 +74,9 @@
         Tel: +541101234567</p>
         </div>
         <form class="contacto-form" action="" method="POST">
-          <label for="nombre">Nombre<input type="text" required></input> </label>
-          <label for="correo">Correo Electrónico<input type="email" required></input> </label>
+          <div id="mensaje-error"></div>
+          <label for="nombre">Nombre<input id="nombre" name="nombre" value=""></input></label>
+          <label for="correo">Correo Electrónico<input id="correo" name="correo" value=""></input> </label>
           <label for="tema">Razón para contactarnos<select id="tema" name="tema">
               <option value="0">Seleccione tema</option>
               <option value="1">1 - Queja o Reembolso</option>
@@ -83,14 +84,15 @@
               <option value="3">3 - Recursos Humanos</option>
               <option value="4">4 - Otra razón</option>
           </select></label>
-          <textarea placeholder="Escribí tu mensaje." required></textarea>
+          <textarea id="mensaje" placeholder="Escribí tu mensaje."></textarea>
           <label for="newsletter" class="flex-row checkbox-label">
               <input type="checkbox" id="newsletter"><span class="checkbox-texto">Deseo suscribirme a novedades por correo electrónico.</span>
           </label>
           <input id="enviar" type="submit" value="Enviar">
+          <div id="mensaje-confirmacion"></div>
         </form>
       </div>
-      <div class="redes-contacto">
+      <!--div class="redes-contacto">
         <p>¡También seguinos en nuestras redes!</p>
         <div class="redes-links">
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -98,7 +100,7 @@
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
-    </div>
+      </div-->
     </div>
     <footer class="py-5 bg-dark">
       <div class="container">
@@ -110,5 +112,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/sobre-nosotros.js"></script>
 </body>
 </html>
