@@ -6,7 +6,7 @@ async function gridCreator() {
     let divTitle = `<div class="grid-title">${item.title}</div>`;
     let divPrice = `<div class="grid-price">${item.price}</div>`;
     let divImage = `<div class="grid-image"><img src="${item.image}"/></div>`;
-    let div = `<div class="grid-item">${divImage} ${divTitle} ${divPrice} </div>`;
+    let div = `<a href="./producto.html"><div class="grid-item">${divImage} ${divTitle} ${divPrice} </div></a>`;
     return div;
   });
   return grid.join("");
