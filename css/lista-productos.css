@@ -32,6 +32,7 @@ main .header-pagina {
 }
 
 .filter {
+  margin-bottom: 30px;
   height: 20%;
   background-color: #e2e2e2;
   padding: 20px;
