@@ -120,9 +120,3 @@ h3 {
 .opinion h3 {
   text-align: center;
 }
-
-.opinion p {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
