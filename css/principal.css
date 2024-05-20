@@ -514,22 +514,74 @@ ul.about {
 }
 
 @media screen and (max-width: 992px) {
-  .contacto-content {
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px 10px;
-  }
-  .texto-descripcion {
-    width: 90%;
-    padding: 25px 0;
-  }
-  .gmaps-img {
-    height: 400px;
-  }
-  .contacto-form {
-    width: 90%;
-  }
-  input[type="checkbox"] {
-    transform: scale(1.5);
-  }
+    .contacto-content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 10px;
+    }
+    .texto-descripcion {
+        width: 90%;
+        padding: 25px 0;
+    }
+    .gmaps-img {
+        height: 400px;
+    }
+    .contacto-form {
+        width: 90%;
+    }
+    input[type="checkbox"] {
+        transform: scale(1.5);
+    }
 }
+/*Footer*/
+  footer {
+    background-color: #a45959;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  .footer-section h4 {
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .footer-section p,
+  .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer-section form input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+  }
+  .footer-section form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+  }
+  .footer-bottom {
+    margin-top: 20px;
+  }
