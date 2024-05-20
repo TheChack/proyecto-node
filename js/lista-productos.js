@@ -12,7 +12,7 @@ async function gridCreator() {
   return grid.join("");
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  let gridHTML = gridCreator();
+document.addEventListener("DOMContentLoaded", async function () {
+  let gridHTML = await gridCreator();
   document.getElementById("grid-container").innerHTML = gridHTML;
 });
