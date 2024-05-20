@@ -49,6 +49,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 10%;
@@ -82,10 +83,14 @@ h3 {
 
 .category img {
   border-radius: 10px;
-  filter: brightness(70%);
+  filter: brightness(50%);
   width: 300px;
   height: 300px;
   display: block;
+  transition: 0.2s ease-in-out;
+}
+.category img:hover {
+  filter: brightness(25%);
 }
 
 .category h3 {
@@ -102,11 +107,13 @@ h3 {
   width: 1040px;
   margin: auto;
   gap: 5%;
+  padding-bottom: 25px;
 }
 
 .opinion {
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .opinion img {

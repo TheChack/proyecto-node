@@ -22,6 +22,7 @@
 }
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .div-nav {
@@ -535,11 +536,12 @@ ul.about {
 }
 /*Footer*/
   footer {
-    background-color: #a45959;
-    color: #fff;
+    background-color: var(--fondo2);
+    color: var(--negro);
     padding: 20px 0;
     text-align: center;
   }
+
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -550,7 +552,7 @@ ul.about {
     margin: 10px;
   }
   .footer-section h4 {
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid var(--negro);
     padding-bottom: 10px;
     margin-bottom: 10px;
   }
@@ -564,7 +566,6 @@ ul.about {
     margin: 5px 0;
   }
   .footer-section ul li a {
-    color: #fff;
     text-decoration: none;
   }
   .footer-section ul li a:hover {
@@ -578,7 +579,7 @@ ul.about {
   .footer-section form button {
     padding: 10px 20px;
     border: none;
-    background-color: #555;
+    background-color: var(--fondo3);
     color: #fff;
     cursor: pointer;
   }
