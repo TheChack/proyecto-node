@@ -27,8 +27,8 @@
         "
       >
         <div style="display: flex; gap: 20px">
-          <img style="width: 40px; height: 40px" src="../assets/icons-nav/menu-svgrepo-com.svg" />
-          <img style="width: 40px; height: 40px" src="../assets/icons-nav/search-svgrepo-com.svg" />
+          <img style="width: 30px; height: 30px" src="../assets/icons-nav/menu-svgrepo-com.svg" />
+          <img style="width: 30px; height: 30px" src="../assets/icons-nav/search-svgrepo-com.svg" />
         </div>
         <a href="../index.html"
           class="logo"
@@ -42,8 +42,8 @@
           <span style="font-size: 1.5rem">Termitos</span>
       </a>
         <div style="display: flex; gap: 20px">
-          <img style="width: 40px; height: 40px" src="../assets/icons-nav/profile-round-1346-svgrepo-com.svg" />
-          <img style="width: 40px; height: 40px" src="../assets/icons-nav/cart-shopping-svgrepo-com.svg" />
+          <img style="width: 30px; height: 30px" src="../assets/icons-nav/profile-round-1346-svgrepo-com.svg" />
+          <img style="width: 30px; height: 30px" src="../assets/icons-nav/cart-shopping-svgrepo-com.svg" />
         </div>
       </div>
     </nav>
@@ -54,26 +54,31 @@
         <img class="header-img2" src="../assets/Producto/stanley-portada.png">
       </header>
       </div>
-      <div style="display:flex; gap: 10%; padding: 5%">
-        <div style="height:350px ;width: 17%; background-color: #e2e2e2; padding: 20px">
+      <div class="container">
+        <div class="filter">
           <div class="filter-card">
             <div>Tamaño</div>
-            <button class="button-size">M</button>
-            <button class="button-size">L</button>
-            <button class="button-size">XL</button>
+            <div class="filter-interior">
+              <button class="button-size">M</button>
+              <button class="button-size">L</button>
+              <button class="button-size">XL</button>
+            </div>
+            
           </div>
           <div class="filter-card">
             <div>Color</div>
-            <button class="button-color" style="background: #8d1d19"></button>
-            <button class="button-color" style="background: #5b6d5d"></button>
-            <button class="button-color" style="background: #fdfffc"></button>
-            <button class="button-color" style="background: #28292b"></button>
+            <div class="filter-interior"><button class="button-color" style="background: #8d1d19"></button>
+              <button class="button-color" style="background: #5b6d5d"></button>
+              <button class="button-color" style="background: #fdfffc"></button>
+              <button class="button-color" style="background: #28292b"></button></div>
+            
           </div>
           <div class="filter-card" style="border-bottom: none">
             <div>Precio</div>
-            <input placeholder="Minimo" />
-            <span>—</span>
-            <input placeholder="Máximo" />
+            <div class="filter-interior"> <input placeholder="Minimo" />
+              <span>—</span>
+              <input placeholder="Máximo" /></div>
+           
           </div>
         </div>
         <div id="grid-container" class="grid-container"></div>
