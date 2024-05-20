@@ -566,7 +566,6 @@ ul.about {
     margin: 5px 0;
   }
   .footer-section ul li a {
-    color: var(--boton1);
     text-decoration: none;
   }
   .footer-section ul li a:hover {
