@@ -102,11 +102,13 @@ h3 {
   width: 1040px;
   margin: auto;
   gap: 5%;
+  padding-bottom: 25px;
 }
 
 .opinion {
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .opinion img {
