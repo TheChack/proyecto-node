@@ -98,16 +98,13 @@ h3 {
 }
 
 .container-opinion {
-  width: 80%;
-  margin: auto auto 10% auto;
-  display: flex;
+  max-width: 80%;
+  width: 1040px;
+  margin: auto;
   gap: 5%;
 }
 
 .opinion {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
   justify-content: center;
   align-items: center;
 }
@@ -119,10 +116,4 @@ h3 {
 
 .opinion h3 {
   text-align: center;
-}
-
-.opinion p {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
 }
