@@ -143,6 +143,13 @@ a {
   font-weight: 300;
   font-size: 1.6rem;
 }
+.producto-puntaje-rating {
+    align-content: center;
+    gap: 10px;
+}
+.producto-puntaje-estrella {
+    height: 20px;
+}
 .producto-opciones {
   margin: 10px 0;
   border-top: 1px solid var(--fondo2);
